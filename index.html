@@ -8,6 +8,7 @@
             background-color: #ffffff;
             color: #000000;
             margin: 20px;
+            font-size: 18px;
         }
         
         a {
@@ -21,9 +22,9 @@
         
         button {
             font-family: "Times New Roman", Times, serif;
-            font-size: 16px;
+            font-size: 18px;
             margin: 5px;
-            padding: 8px 16px;
+            padding: 10px 20px;
             cursor: pointer;
             border: none;
             background: none;
@@ -51,20 +52,28 @@
         }
         
         .gallery img {
-            width: 200px;
-            height: 200px;
+            width: 220px;
+            height: 220px;
             object-fit: cover;
-            border: 1px solid #000000;
         }
         
         iframe {
             width: 100%;
-            height: 600px;
-            border: 1px solid #000000;
+            height: 650px;
+            border: none;
         }
         
         h1 {
             text-align: center;
+            font-size: 2.4em;
+        }
+ 
+        h2 {
+            font-size: 1.6em;
+        }
+ 
+        h3 {
+            font-size: 1.3em;
         }
         
         .nav {
@@ -73,12 +82,22 @@
         }
         
         ul {
-            line-height: 1.8;
+            line-height: 2;
+        }
+ 
+        .hero-image {
+            display: block;
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            margin: 0 auto 10px auto;
         }
     </style>
 </head>
 <body>
     <h1>bogdan sekalski</h1>
+ 
+    <img src="image1.png" alt="Bogdan Sekalski" class="hero-image">
     
     <div class="nav">
         <button onclick="showSection('music')">Music</button>
@@ -141,7 +160,6 @@
             document.getElementById(sectionId).classList.add('active');
         }
         
-        // Show music section by default
         showSection('music');
     </script>
 </body>
